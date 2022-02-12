@@ -40,6 +40,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     margin-right: 5px;
     position: absolute;
     left: 0;
+padding-left: 16px;
 }
 #search-input{
     border: 0;
