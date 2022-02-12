@@ -32,6 +32,7 @@ searhInput.addEventListener('change', (e) => {
 
             console.log(data)
         })
+    searhInput.blur()
 })
 
 (fetch(`https://api.openweathermap.org/data/2.5/weather?q=hanoi&appid=816fe009dcdc34b2dc92cf44c33ea6d9&units=metric&lang=vi`)
