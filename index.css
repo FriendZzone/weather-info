@@ -1,122 +1,120 @@
-
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 @keyframes ease-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] { font-size: 16px; }
 
 .container {
-    color: white;
-    background: linear-gradient(145deg, #2193b0, #6dd5ed);
-    width: 400px;
-    margin: 100px auto;
-    border-radius: 5px;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+  color: white;
+  background: linear-gradient(145deg, #2193b0, #6dd5ed);
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
 }
 
-.search-bar{
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 20px;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #fff;
+.search-bar {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
 }
 
 .search-icon {
-    margin-right: 5px;
-    position: absolute;
-    left: 0;
-padding-left: 16px;
+  margin-right: 5px;
+  position: absolute;
+  left: 0;
 }
-#search-input{
-    border: 0;
-    outline: 0;
-    padding: 3px 3px 3px 20px;
-    background-color: transparent;
-    height: 20px;
-    color: #fff;
+#search-input {
+  border: 0;
+  outline: 0;
+  padding: 3px 3px 3px 40px;
+  background-color: transparent;
+  height: 20px;
+  color: #fff;
+  font-size: 16px;
+  font: 16px "montserrat";
 }
 
-#search-input::placeholder{
-    color: rgba(255,255,255,0.5)
-
+#search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font: 0.8em montserrat;
 }
-.info-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-    padding: 80px 50px;
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  padding: 80px 50px;
 }
-.city-name{
-    font-size: 25px;
-    margin-bottom: 3px;
-    text-align: center;
+.city-name {
+  font-size: 25px;
+  margin-bottom: 3px;
+  text-align: center;
 }
-.wheather-state{
-    font-size: 13px;
+.wheather-state {
+  font-size: 13px;
 }
-.weather-icon{
-    width: 70px;
+.weather-icon {
+  width: 70px;
 }
-.temperature{
-    font-size: 80px;
-    font-weight: 300;
-    line-height: 1;
-    position: relative;
-    
+.temperature {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 1;
+  position: relative;
 }
 .ease-in-animation {
-    animation: ease-in ease-in-out 1s linear;
-    transition: all 0.5s linear;
+  animation-name: ease-in;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
-.temperature::after{
-    position: absolute;
-    content: "o";
-    top: 0;
-    right: -15px;
-    font-size: 25px;
-}
-
-.addtional-section{
-    border-top: 1px solid #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px ;
-    font-size: 13px;
+.temperature::after {
+  position: absolute;
+  content: "o";
+  top: 0;
+  right: -15px;
+  font-size: 25px;
 }
 
-.addtional-section .row{
-    display: flex;
-    justify-content: space-around;
-    margin: 5px;
+.addtional-section {
+  border-top: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  font-size: 13px;
 }
 
-.addtional-section .row .item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+.addtional-section .row {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
 }
 
-.addtional-section .row .item .label{
-    font-size: 15px;
-    font-weight:  500;
+.addtional-section .row .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
 
+.addtional-section .row .item .label {
+  font-size: 15px;
+  font-weight: 500;
 }
