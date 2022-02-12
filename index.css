@@ -1,0 +1,119 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes ease-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    color: white;
+    background: linear-gradient(145deg, #2193b0, #6dd5ed);
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search-bar{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.search-icon {
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+}
+#search-input{
+    border: 0;
+    outline: 0;
+    padding: 3px 3px 3px 20px;
+    background-color: transparent;
+    height: 20px;
+    color: #fff;
+}
+
+#search-input::placeholder{
+    color: rgba(255,255,255,0.5)
+
+}
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding: 80px 50px;
+}
+.city-name{
+    font-size: 25px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+.wheather-state{
+    font-size: 13px;
+}
+.weather-icon{
+    width: 70px;
+}
+.temperature{
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 1;
+    position: relative;
+    
+}
+.ease-in-animation {
+    animation: ease-in ease-in-out 1s linear;
+    transition: all 0.5s linear;
+}
+.temperature::after{
+    position: absolute;
+    content: "o";
+    top: 0;
+    right: -15px;
+    font-size: 25px;
+}
+
+.addtional-section{
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px ;
+    font-size: 13px;
+}
+
+.addtional-section .row{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.addtional-section .row .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.addtional-section .row .item .label{
+    font-size: 15px;
+    font-weight:  500;
+
+}
