@@ -32,6 +32,7 @@ searhInput.addEventListener('change', (e) => {
 
             console.log(data)
         })
+    e.target.value = ''
     searhInput.blur()
 })
 
