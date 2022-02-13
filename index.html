@@ -13,14 +13,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container night-mode">
 
         <div class="main-section">
             <div class="search-bar">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 <input type="text" name="search-input" id="search-input" placeholder="Tìm kiếm thành phố ...">
+                <div class="dark-mode-btn">
+                    <i class="fa-solid fa-eye btn-icon"></i>
+                    <i class="fa-solid fa-eye-low-vision hide btn-icon"></i>
+                    <span>dark mode</span>
+                </div>
             </div>
             <div class="info-wrapper">
+                <ul class="city-options">
+                    <li class="city-option active">Hà Nội</li>
+                    <li class="city-option">Đà Nẵng</li>
+                    <li class="city-option">Tokyo</li>
+                    <li class="city-option">London</li>
+                </ul>
                 <p class="city-name ease-in-animation"></p>
                 <p class="wheather-state ease-in-animation"></p>
                 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon ease-in-animation">
