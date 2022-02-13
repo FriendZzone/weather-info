@@ -13,15 +13,46 @@
 }
 
 .container {
+  position: relative;
   color: white;
-  background: linear-gradient(145deg, #2193b0, #6dd5ed);
+  background: linear-gradient(calc(180deg - 145deg), #11677c, #6dd5ed);
   width: 400px;
   margin: 50px auto;
   border-radius: 5px;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
+  transition: all 1s;
+  transform-origin: top;
+  background-image: url(./js/source/bg.png);
+  background-position: bottom;
 }
 
+.night-mode {
+  background-position: top;
+
+}
+.btn-icon {
+  display: block;
+  transition: all 1s;
+}
+.hide {
+  display: none;
+  transition: all 1s;
+}
+
+.dark-mode-btn {
+  position: absolute;
+  left: 212px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark-mode-btn span {
+  font-size: 10px;
+  margin-left: 6px;
+  display: block;
+  transition: all 1s;
+}
 .search-bar {
   width: 50%;
   margin: 0 auto;
@@ -39,9 +70,10 @@
   left: 0;
 }
 #search-input {
+  flex: 1;
   border: 0;
   outline: 0;
-  padding: 3px 3px 3px 40px;
+  margin: 3px 3px 3px 90px;
   background-color: transparent;
   height: 20px;
   color: #fff;
@@ -61,6 +93,24 @@
   height: 30vh;
   padding: 80px 50px;
 }
+.city-options {
+  display: flex;
+  list-style: none;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.city-options li {
+  padding: 0 6px;
+  margin: 0 4px;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+.city-options .active {
+  font-size: 16px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
 .city-name {
   font-size: 25px;
   margin-bottom: 3px;
@@ -77,8 +127,10 @@
   font-weight: 300;
   line-height: 1;
   position: relative;
+  transition: all 0.2s ease;
 }
 .ease-in-animation {
+  transition: all 1s ease;
   animation-name: ease-in;
   animation-duration: 3s;
   animation-iteration-count: infinite;
